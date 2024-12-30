@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>timetable page</title>
+    <style>
+        th
+{
+ background-color:#006666;
+ color:#FFFFFF;
+}
+th,td
+{
+text-align:center;
+}
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            font-style: italic;
+            color: #006666;
+            height: 100%; 
+        }
+        .sub-container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .sub-header {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: #006666;
+            height: 100%; 
+        }
+        .bottomrow {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            height: 100%; 
+        }
+        .leftcolumn {
+            background-color: #006666;
+            font-style: italic;
+            height: 100%; 
+        }
+        .rightcolumn {
+            background-color: #FFFFFF;
+            height: 100%;
+padding:10px; 
+        }
+        iframe {
+            width: 100%;
+            height: 100%; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <iframe src="logo.html"></iframe>
+            <iframe src="name.html"></iframe>
+        </div>
+        <div class="sub-container">
+            <div class="sub-header">
+                <iframe src="login.html"></iframe>
+                <iframe src="profile.html"></iframe>
+                <iframe src="registration.html"></iframe>
+                <iframe src="timetable.html"></iframe>
+            </div>
+            <div class="bottomrow">
+                <div class="leftcolumn">
+                    <iframe src="services.html"></iframe>
+                </div>
+                <div class="rightcolumn">
+                    <table border="1" align="center" cellspacing="0" cellpadding="10"style="border-color:#006666;">
+      <tr>
+        <th>Weekdays</th>
+        <th>Slot-1(8-9 am)</th>
+        <th>Slot-2(9-10 am)</th>
+        <th>Slot-3(10-11 am)</th>
+        <th>Slot-4(11-12 pm)</th>
+        <th>Slot-5(12-1 pm)</th>
+        <th>Slot-6(1-2 pm)</th>
+        <th>Slot-7(2-2 pm)</th>
+        <th>Slot-8(3-4 pm)</th>
+      </tr>
+      <tr>
+        <th>MONDAY</th>
+        <td colspan="2">AI LAB</td>
+        <td>CLOUD</td>
+        <td>CD</td>
+        <td></td>
+        <td rowspan="5">LUNCH</td>
+        <td colspan="2">WAD LAB</td>
+      </tr>
+      <tr>
+        <th>TUESDAY</th>
+        <td>CLOUD</td>
+        <td>CNS</td>
+        <td>WAD</td>
+        <td>AI</td>
+        <td>OE</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>WEDNESDAY</th>
+        <td>CNS</td>
+        <td>WAD</td>
+        <td COLSPAN="2">CD LAB</td>
+        <td></td>
+        <td>OE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>THURSDAY</th>
+        <td>WAD</td>
+        <td>CLOUD</td>
+        <td>CNS</td>
+        <td>CD</td>
+        <td>OE</td>
+        <td>AI</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>FRIDAY</th>
+        <td COLSPAN="2">CLAD</td>
+        <td COLSPAN="2">IC</td>
+        <td></td>
+        <td>AI</td>
+        <td>CD</td>
+      </tr>
+      <tr>
+        <th>SATURDAY</th>
+        <td colspan="8">HOLIDAY</td>
+      </tr>
+    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

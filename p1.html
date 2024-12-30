@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>profile page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            font-style: italic;
+            color: #006666;
+            height: 100%; 
+        }
+        .sub-container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .sub-header {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: #006666;
+            height: 100%; 
+        }
+        .bottomrow {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            height: 100%; 
+        }
+        .leftcolumn {
+            background-color: #006666;
+            font-style: italic;
+            height: 100%; 
+        }
+        .rightcolumn {
+padding:10px;
+            background-color: #FFFFFF;
+            height: 100%; 
+        }
+        iframe {
+            width: 100%;
+            height: 100%; 
+            border: none;
+        }
+        form{
+font-size:20px;
+}
+input[type="text"],input[type="password"]{
+width: 300px;
+height: 30px;
+background-color:#c8d5b9;
+border-color:#c8d5b9;
+}
+input[type="submit"],input[type="reset"]{
+background-color: #006666;
+color: #FFFFFF; 
+width: 120px;
+height: 40px;
+font-size: 20px;
+border-color:#006666
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <iframe src="logo.html"></iframe>
+            <iframe src="name.html"></iframe>
+        </div>
+        <div class="sub-container">
+            <div class="sub-header">
+                <iframe src="login.html"></iframe>
+                <iframe src="profile.html"></iframe>
+                <iframe src="registration.html"></iframe>
+                <iframe src="timetable.html"></iframe>
+            </div>
+            <div class="bottomrow">
+                <div class="leftcolumn">
+                    <iframe src="services.html"></iframe>
+                </div>
+                <div class="rightcolumn">
+                    <form>
+<b>Student Name : <input type="text" name="sn"/>
+<br/><br/>
+Registration number : <input type="text" name="rn"/>
+<br/><br/>
+Gender :</b> <input type="radio" name="x" value="m">male
+         <input type="radio" name="x" value="f">female
+<br/><br/>
+<b>Mobile no : <input type="text" name="mn"/>
+<br/><br/>
+Course :</b> <input type="checkbox" name="y" value="b">b-tech
+         <input type="checkbox" name="y" value="m">m-tech
+<br/><br/>
+<b>Campus : <input type="text" name="c"/>
+<br/><br/>
+Branch : <input type="text" name="b"/>
+<br/><br/>
+Batch : <input type="text" name="bt"/>
+<br/><br/>
+New password : <input type="password" name="np"/>
+<br/><br/>
+confirm password : <input type="password" name="cp"/>
+<br/><br/>
+<center><input type="submit" name="s" value="submit"/>
+<input type="reset" name="r" value="reset"/></center>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

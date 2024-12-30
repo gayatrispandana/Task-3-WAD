@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>registration page</title>
+    <style>
+        form{
+font-size:20px;
+}
+input[type="text"]{
+width: 300px;
+height: 30px;
+background-color:#c8d5b9;
+border-color:#c8d5b9;
+}
+select[name="set"]{
+width:75px;
+height:30px;
+background-color:#c8d5b9;
+border-color:#c8d5b9;
+}
+input[type="submit"],input[type="reset"]{
+background-color: #006666;
+color: #FFFFFF; 
+width: 120px;
+height: 40px;
+font-size: 20px;
+border-color:#006666
+}
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            font-style: italic;
+            color: #006666;
+            height: 100%; 
+        }
+        .sub-container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            height: 100%; 
+            background-color: #FFFFFF;
+        }
+        .sub-header {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: #006666;
+            height: 100%; 
+        }
+        .bottomrow {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            height: 100%; 
+        }
+        .leftcolumn {
+            background-color: #006666;
+            font-style: italic;
+            height: 100%; 
+        }
+        .rightcolumn {
+            background-color: #FFFFFF;
+            height: 100%;
+padding:10px; 
+        }
+        iframe {
+            width: 100%;
+            height: 100%; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <iframe src="logo.html"></iframe>
+            <iframe src="name.html"></iframe>
+        </div>
+        <div class="sub-container">
+            <div class="sub-header">
+                <iframe src="login.html"></iframe>
+                <iframe src="profile.html"></iframe>
+                <iframe src="registration.html"></iframe>
+                <iframe src="timetable.html"></iframe>
+            </div>
+            <div class="bottomrow">
+                <div class="leftcolumn">
+                    <iframe src="services.html"></iframe>
+                </div>
+                <div class="rightcolumn">
+                    <form>
+<b>Student Name : <input type="text" name="sn"/>
+<br/><br/>
+Registration number : <input type="text" name="rn"/>
+<br/><br/>
+Set : </b>
+<select name="set">
+    <option value="1" selected>Set-1</option>
+    <option value="2">Set-2</option>
+    <option value="3">Set-3</option>
+    <option value="4">Set-4</option>
+</select>
+<br/><br/>
+<table border="1" cellspacing="0" style="border-color:#006666;">
+      <tr style="background-color:#006666;color:#FFFFFF;">
+        <th>Subjects</th>
+        <th>Faculty</th>
+      </tr>
+      <tr>
+         <td>programming with python</td>
+         <td>
+            <input type="radio" name="g" value="b">bhavani<br/>
+            <input type="radio" name="g" value="j">jhansi<br/>
+            <input type="radio" name="g" value="m">mounika
+         </td>
+      </tr>
+      <tr>
+         <td>web application development and software frameworks</td>
+         <td>
+            <input type="radio" name="h" value="m">madhuri<br/>
+            <input type="radio" name="h" value="v">vishnu<br/>
+            <input type="radio" name="h" value="l">lalitha
+         </td>
+      </tr>
+      <tr>
+         <td>cryptography and network security</td>
+         <td>
+            <input type="radio" name="i" value="l">lakshmeeswari<br/>
+            <input type="radio" name="i" value="m">mrudula<br/>
+            <input type="radio" name="i" value="n">nagalakshmi
+         </td>
+      </tr>
+    </table>
+<br/><br/>
+<center><input type="submit" name="s" value="submit"/>
+<input type="reset" name="r" value="reset"/></center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
